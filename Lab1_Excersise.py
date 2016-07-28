@@ -24,9 +24,10 @@ class MyGroup:
 
 myGroup = MyGroup()
 
-for i in range(0, 4):
+number_of_members = input("How many people are in the group?")
+for i in range(0, number_of_members):
     name = raw_input("Name " + str(i) + ":")
     project = raw_input("Project Theme " + str(i) + ":")
-    myGroup.add(name,project)
+    myGroup.add(name, project)
 
 myGroup.save('GroupMembers.txt')
